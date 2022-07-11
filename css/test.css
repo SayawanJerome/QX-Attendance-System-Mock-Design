@@ -385,10 +385,37 @@ header .image-text .profession {
             font-size: 60px;
             border-radius: 6px;
         }
-     
+
         .tcol-right {
             margin-left:auto;
-        }  
+            right:0;
+            display: flex;
+            flex-direction: row;
+
+        }
+            .tcol-right button {
+                background-color: var(--primary-color);
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 40px;
+                margin-right: 10px;
+                transition: var(--tran-05);
+                color: var(--sidebar-color);
+                border-radius:10px;
+                font-weight: 500;
+                font-size: 17px;
+            }
+            .tcol-right .counter {                
+                float: left;                
+                padding: 14px 16px;
+                margin-right: 10px;
+                transition: var(--tran-05);                
+                font-weight: 500;
+                font-size: 17px;
+            }
+        
 
     .lcol {
         width: 80%;
