@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/qxsmall.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Attendance</span>
+                    <span class="profession">System</span>
+                </div>
+            </div>
+
+            <i class='bx bx-menu toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link active">
+                        <a href="dashboard.html">
+                            <i class='bx bx-tachometer icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="report.html">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Report</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="login.html">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </nav>
+    <nav>
+        <div class="topbar">
+
+            <div class="topmenu">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle topicon'></i>
+                        <span class="toptext nav-text"> Greetings</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        
+        <div class="content">
+            <div class="dashtrow">
+                <div class="tcol">
+                    <div class="image-text">
+                        <span class="text">
+                            <i class='bx bx-user-circle icon'></i>
+                        </span>
+                        <div class="text logo-text">
+                            <span class="name">
+                                User
+                            </span>
+                            <span class="profession">
+                                Department
+                            </span>
+                        </div>
+                        <div class="tcol-right">
+                            <span>
+                                ---
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="dashbrow">
+                <div class="lcol">
+                    --
+                </div>
+                <div class="rcol">
+                    --
+                </div>
+            </div>
+            
+            
+        </div> 
+    </section>
+
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/qxsmall.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Attendance</span>
+                    <span class="profession">System</span>
+                </div>
+            </div>
+
+            <i class='bx bx-menu toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link sidebar-active">
+                        <a href="dashboard.html">
+                            <i class='bx bx-tachometer icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link active">
+                        <a href="report.html">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Report</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <nav>
+        <div class="topbar">
+
+            <div class="topmenu">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle topicon'></i>
+                        <span class="toptext nav-text"> Greetings</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="content">
+            <div class="report">
+                <div class="reporttab">
+                    <button class="tablinks" onclick="openTab(event, 'Monthly')" id="defaultOpen"><div class="reporttext">Monthly Timetable</div></button>
+                    <button class="tablinks" onclick="openTab(event, 'Leave')">Leave Report</button>                    
+                </div>
+                <div class="report-content">
+                    <div id="Monthly" class="tabcontent">
+                        <div class="summary">
+                            <div class="summary-head">Summary for the Month of -month- -year-</div>
+                            <div class="summary-content">
+                                <div>--</div>
+                                <div>--</div>
+                            </div>
+                        </div>
+                        <div class="attendancetable">
+                            <div class="attendance-head">
+                                <span class="attendance-head-text">Attendance Logs</span>
+                                <div class="attendance-head-select">
+                                    <select class="form-select" aria-label="Month">
+                                        <option selected>Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select class="form-select" aria-label="Year">
+                                        <option selected>Year</option>
+                                        <option value="1">2020</option>
+                                        <option value="2">2021</option>
+                                        <option value="3">2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>
+                                                Attendance Type
+                                            </th>
+                                            <th>
+                                                Time In
+                                            </th>
+                                            <th>
+                                                Time Out
+                                            </th>
+                                            <th>
+                                                Hours Worked
+                                            </th>
+                                            <th>
+                                                Undertime
+                                            </th>
+                                            <th>
+                                                Status
+                                            </th>
+                                            <th>
+                                                Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>--/--/--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>--/--/--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>--/--/--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Leave" class="tabcontent">
+                        <div class="leave-summary">
+                            <div class="cards">
+                                <div class="vac-card">
+                                    --
+                                </div>
+                                <div class="sick-card">
+                                    --
+                                </div>
+                                <div class="offset-card">
+                                    --
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attendancetable">
+                            <div class="leave-head"><span class="leave-report">Leave Report</span><button class="leave-request-report">Request Leave</button></div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>
+                                                Attendance Type
+                                            </th>
+                                            <th>
+                                                Time In
+                                            </th>
+                                            <th>
+                                                Time Out
+                                            </th>
+                                            <th>
+                                                Hours Worked
+                                            </th>
+                                            <th>
+                                                Undertime
+                                            </th>
+                                            <th>
+                                                Status
+                                            </th>
+                                            <th>
+                                                Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>--/--/--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>--/--/--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>--/--/--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                            <td>--</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        function openTab(evt, tabName) {
+            
+            var i, tabcontent, tablinks;
+ 
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+            
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>

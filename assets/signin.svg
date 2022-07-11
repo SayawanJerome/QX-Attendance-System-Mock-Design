@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="218" height="46" viewBox="0 0 218 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 20px;
+        font-family: SegoeUI-Semibold, Segoe UI;
+        font-weight: 600;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4f4f"/>
+      <stop offset="1" stop-color="#b40000"/>
+    </linearGradient>
+  </defs>
+  <g id="sign_in" data-name="sign in" transform="translate(-819.72 -793.746)">
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" width="218" height="46" rx="23" transform="translate(819.72 793.746)"/>
+    <text id="Sign_In-2" data-name="Sign In" class="cls-2" transform="translate(897.72 825.746)"><tspan x="0" y="0">Sign In</tspan></text>
+  </g>
+</svg>

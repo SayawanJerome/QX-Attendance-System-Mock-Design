@@ -1,0 +1,11 @@
+
+html, .bg_color {
+    height: 100%;
+    background-image: linear-gradient(white, lightgray );
+    
+}
+
+#login_img {
+    width: 80%;
+    
+}
