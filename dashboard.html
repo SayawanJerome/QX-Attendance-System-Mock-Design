@@ -59,7 +59,7 @@
             <div class="bottom-content">
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="login.html">
+                        <a href="index.html">
                             <i class='bx bx-log-out icon'></i>
                             <span class="text nav-text">Logout</span>
                         </a>
@@ -103,15 +103,16 @@
                             </span>
                         </div>
                         <div class="tcol-right">
-                            <div>
-                                <label id="hours">00</label>
-                                <label id="colon">:</label>
-                                <label id="minutes">00</label>
-                                <label id="colon">:</label>
-                                <label id="seconds">00</label>
+                            <div class="counter">
+                                <span id="hours">00</span>
+                                <span id="colon">:</span>
+                                <span id="minutes">00</span>
+                                <span id="colon">:</span>
+                                <span id="seconds">00</span>
                             </div>
-                            <div></div>
-                            <div></div>
+                            <div>
+                                <button class="btn btn-danger" onclick="startCountUp()">Start</button>
+                            </div>                            
                         </div>
                     </div>
 
@@ -134,41 +135,32 @@
     <script>
         const body = document.querySelector('body'),
             sidebar = body.querySelector('nav'),
-            toggle = body.querySelector(".toggle"),
-            searchBtn = body.querySelector(".search-box"),
-            modeSwitch = body.querySelector(".toggle-switch"),
-            modeText = body.querySelector(".mode-text");
+            toggle = body.querySelector(".toggle");
 
 
         toggle.addEventListener("click", () => {
             sidebar.classList.toggle("close");
         })
 
-        var hoursLabel = document.getElementById("hours");
-        var minutesLabel = document.getElementById("minutes");
-        var secondsLabel = document.getElementById("seconds");
-        var totalSeconds = 0;
-        setInterval(setTime, 1000);
+        function startCountUp() {
 
-        function setTime() {
-            ++totalSeconds;
-            
-            secondsLabel.innerHTML = pad(totalSeconds % 60);
-            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60) /60);
-        }
+            if (isSetTimmeoutRunning == false) {
+                //We set this variable to true when we first run the setTimeout method.
+                //It will get set back to false when the setTimeout method has completed
+                isSetTimmeoutRunning = true;
 
-        function pad(val) {
-            var valString = val + "";
-            if (valString.length < 2) {
-                return "0" + valString;
-            }
-            else {
-                return valString;
+                if (isSetTimmeoutRunning = true) {
+                    var second = 0;
+                    setInterval(function () {
+                        document.getElementById("seconds").innerHTML = pad(++second % 60);
+                        document.getElementById("minutes").innerHTML = pad(parseInt(second / 60, 10));
+                        document.getElementById("hours").innerHTML = pad(parseInt(second / 360, 10));
+                    }, 1000);
+                }
+
+
             }
         }
-
-
     </script>
 
 </body>
