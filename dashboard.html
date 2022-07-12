@@ -1,3 +1,306 @@
+<<<<<<< HEAD
+﻿<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <div id="logout-modal" class="modal">
+
+        <div class="modal-content">
+            <span class="closemodal">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/qxsmall.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Attendance</span>
+                    <span class="profession">System</span>
+                </div>
+            </div>
+
+            <i class='bx bx-menu toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link active">
+                        <a href="dashboard.html">
+                            <i class='bx bx-tachometer icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="report.html">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Report</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user.html">
+                            <i class='bx bxs-user-detail icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html" id="logout-modal-button">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Logout</span>
+
+
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <nav>
+        <div class="topbar">
+
+            <div class="topmenu">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user-circle topicon'></i>
+                        <span class="toptext nav-text"> Greetings</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+
+        <div class="content">
+            <div class="dashtop">
+                <div class="tcol">
+                    <div class="image-text">
+                        <span class="text">
+                            <i class='bx bx-user-circle icon'></i>
+                        </span>
+                        <div class="text logo-text">
+                            <span class="name">
+                                User
+                            </span>
+                            <span class="profession">
+                                Department
+                            </span>
+                        </div>
+                        <div class="tcol-right">
+                            <div class="counter">
+                                <span id="hours">00</span>
+                                <span id="colon">:</span>
+                                <span id="minutes">00</span>
+                                <span id="colon">:</span>
+                                <span id="seconds">00</span>
+                            </div>
+                            <div>
+                                <button class="btn btn-danger" onclick="startCountUp()">Start</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="dashbot">
+                <div class="lcol">
+                    <div>
+                        <div>Attendance Log<button>This Week</button></div>
+                        <div>
+                            <table>
+                                
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Leave Report</div>
+                    </div>
+                </div>
+                <div class="rcol">
+                    <div>
+                        <div>Leave Balance
+                            <div class="cards">
+                                <div class="vac-card">
+                                    <div class="texthead">Vacation Leave</div>
+                                </div>
+                                <div class="sick-card">
+                                    <span>Sick Leave</span>
+                                </div>
+                                <div class="offset-card">
+                                    <span>Offset</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="span12">
+                                    <table class="table-condensed table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="7">
+                                                    <span class="btn-group">
+                                                        <a class="btn"><i class="icon-chevron-left"></i></a>
+                                                        <a class="btn active">-Month- -Year-</a>
+                                                        <a class="btn"><i class="icon-chevron-right"></i></a>
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Su</th>
+                                                <th>Mo</th>
+                                                <th>Tu</th>
+                                                <th>We</th>
+                                                <th>Th</th>
+                                                <th>Fr</th>
+                                                <th>Sa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="muted">29</td>
+                                                <td class="muted">30</td>
+                                                <td class="muted">31</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>8</td>
+                                                <td>9</td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>13</td>
+                                                <td>14</td>
+                                                <td>15</td>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>19</td>
+                                                <td class="btn-primary"><strong>20</strong></td>
+                                                <td>21</td>
+                                                <td>22</td>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26</td>
+                                                <td>27</td>
+                                                <td>28</td>
+                                                <td>29</td>
+                                                <td class="muted">1</td>
+                                                <td class="muted">2</td>
+                                                <td class="muted">3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Leave Report</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        function startCountUp() {
+
+            if (isSetTimmeoutRunning == false) {
+                //We set this variable to true when we first run the setTimeout method.
+                //It will get set back to false when the setTimeout method has completed
+                isSetTimmeoutRunning = true;
+
+                if (isSetTimmeoutRunning = true) {
+                    var second = 0;
+                    setInterval(function () {
+                        document.getElementById("seconds").innerHTML = pad(++second % 60);
+                        document.getElementById("minutes").innerHTML = pad(parseInt(second / 60, 10));
+                        document.getElementById("hours").innerHTML = pad(parseInt(second / 360, 10));
+                    }, 1000);
+                }
+
+
+            }
+        }
+
+        var modal = document.getElementById("logout-modal");
+
+        var btn = document.getElementById("logout-modal-button");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
+=======
 ﻿<!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
@@ -165,3 +468,4 @@
 
 </body>
 </html>
+>>>>>>> d5b4f1e33a7596eea317d1d88d0995b7a5e31aac
